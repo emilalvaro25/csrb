@@ -1,0 +1,7 @@
+{
+  "name": "Eburon Labs — CSR Studio",
+  "description": "A responsive, modern Customer Service Representative (CSR) studio leveraging Gemini's Live Audio API for real-time, AI-powered conversations. Includes features for TTS voice previews, grounded search, and complex query resolution.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

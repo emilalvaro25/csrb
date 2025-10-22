@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Eburon Labs — CSR Studio (Responsive Modern)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="color-scheme" content="dark" />
+  <style>
+    :root{
+      --bg:#0b0e13; --card:#11141a; --muted:#9aa0a6; --text:#e7e8ea;
+      --border:#1b2130; --teal:#19c2ff; --gold:#f6c453; --danger:#ef4444; --ok:#22c55e;
+    }
+    html,body{background:var(--bg); color:var(--text); font-family: sans-serif;}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:14px}
+    .badge{border:1px solid var(--border); border-radius:999px; padding:2px 8px; font-size:11px; color:var(--muted)}
+    .glow{box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .scroll-slim{scrollbar-width:thin; scrollbar-color:#2a3242 transparent}
+    .nav-item{display:flex; align-items:center; gap:.6rem; padding:.6rem .75rem; border-radius:10px; color:#c9d0d7}
+    .nav-item.active{background:linear-gradient(90deg, rgba(25,194,255,.14), rgba(246,196,83,.12)); color:#e9f7ff}
+    .dot{width:8px; height:8px; border-radius:999px; display:inline-block}
+    .kbd{border:1px solid var(--border); background:#0b0e13; border-radius:10px}
+    .btn{border:1px solid var(--border); border-radius:12px; padding:.65rem .85rem; background:#0e1117; transition:.12s; cursor:pointer;}
+    .btn:active{transform:translateY(1px) scale(.99)}
+    .btn:disabled{opacity:0.5; cursor:not-allowed;}
+    .btn-cta{background:linear-gradient(90deg, rgba(25,194,255,.16), rgba(246,196,83,.16)); border-color:#273241}
+    .ring-anim{animation:ringPulse 1.6s ease-in-out infinite}
+    @keyframes ringPulse{0%{opacity:.45;transform:scale(1)}50%{opacity:.9;transform:scale(1.04)}100%{opacity:.45;transform:scale(1)}}
+    .orb{width:56px;height:56px;border-radius:999px;border:2px solid #233;background:radial-gradient(100% 100% at 50% 50%, rgba(25,194,255,.25), rgba(246,196,83,.2) 60%, rgba(0,0,0,.2)); animation:pulse 2.2s ease-in-out infinite}
+    .orb.listening{animation:pulse 0.8s ease-in-out infinite;}
+    @keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.06)}100%{transform:scale(1)}}
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.26.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
